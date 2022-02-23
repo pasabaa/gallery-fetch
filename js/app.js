@@ -1,12 +1,18 @@
 let btnSubmit = document.querySelector('#btnSubmit');
 
+var output = document.querySelector('#demo');
 
+output.innerHTML = num.value;
+
+num.oninput = function() {
+    output.innerHTML = this.value;
+}
 
 btnSubmit.addEventListener('click', () => {
 
-    var num = document.querySelector('#num').value;
-    
-    var url = `https://picsum.photos/v2/list?page=2&limit=${num}`;
+    var num = document.querySelector('#num');
+
+    var url = `https://picsum.photos/v2/list?page=2&limit=${num.value}`;
 
     fetch(url)
     .then(response => response.json())

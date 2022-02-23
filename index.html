@@ -100,8 +100,9 @@
                     quisquam soluta quam eius quia doloribus illum repellendus voluptatibus nostrum consequatur.</p>
                     <div class="form-group my-4">
                         <label class="text-muted" for="num">Select how many images you want to display</label>
-                        <input class="form-control form-control-sm" value="1" type="number" min="1" max="100" name="num" id="num">
-                        <button class="btn btn-sm btn-outline-dark my-2" id="btnSubmit" type="submit">Go</button>
+                        <input class="form-range form-control-sm" value="1" type="range" min="1" max="100" step="1" name="num" id="num">
+                        <p class="fw-bolder">Value: <span class="fw-normal" id="demo"></span></p>
+                        <button class="btn btn-sm btn-outline-dark my-2" id="btnSubmit" type="submit">Show</button>
                     </div>
             </div>
         </div>
