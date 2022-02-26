@@ -26,7 +26,7 @@ btnSubmit.addEventListener('click', () => {
     
         for (let i = 0; i < data.length; i++) {
             body += `<div class="col-lg-4 col-md-6 col-12 my-2">
-                        <div class="card h-100 h-max shadow-sm border-0 p-4">
+                        <div class="card shadow-sm border-0 p-4">
                             <p class="h4 fw-bolder">${data[i].author}</p>
                             <p class="m-0"><span class="badge bg-light text-dark fw-normal">Size: ${data[i].width} x ${data[i].height}</span></p>
                             <div class="text-center my-2">

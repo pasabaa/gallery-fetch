@@ -35,3 +35,7 @@ body {
     color: aliceblue;
     top: 0;
 }
+
+.btn:focus{
+    box-shadow: none !important;
+}
